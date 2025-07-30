@@ -16,7 +16,7 @@ class HomePage {
     await this.page.click(this.checkIn);
   }
 
-  async selectDate(page, daysFromToday) {
+  async selectDate(page, daysFromToday, i) {
     const targetDate = new Date();
     targetDate.setDate(targetDate.getDate() + daysFromToday);
 
@@ -27,7 +27,7 @@ class HomePage {
       day: 'numeric'
     });
 
-    await page.locator(`[aria-label="${ariaLabel}"]`).click();
+    await page.locator(`[aria-label="${ariaLabel}"]`).nth(i).click();
   }
 
   async searchBooking() {

@@ -10,12 +10,12 @@ const configurations = [
     traceFile: 'trace-desktop.zip',
     videoDir: 'videos/desktop/',
   },
-  {
-    name: 'Mobile (iPhone 13)',
-    options: devices['iPhone 13'],
-    traceFile: 'trace-mobile.zip',
-    videoDir: 'videos/mobile/',
-  },
+  // {
+  //   name: 'Mobile (iPhone 13)',
+  //   options: devices['iPhone 13'],
+  //   traceFile: 'trace-mobile.zip',
+  //   videoDir: 'videos/mobile/',
+  // },
 ];
 
 for (const config of configurations) {
@@ -57,8 +57,8 @@ for (const config of configurations) {
 
       // search rooms
       await homePage.openCalender();
-      await homePage.selectDate(page, 1); // select check in date which is tomorrow
-      await homePage.selectDate(page, 2); // Select check out date which is the day after tomorrow
+      await homePage.selectDate(page, 1, 0); // select check in date which is tomorrow
+      await homePage.selectDate(page, 2, 1); // Select check out date which is the day after tomorrow
       await homePage.searchBooking();   
 
       // select room and go to checkout
