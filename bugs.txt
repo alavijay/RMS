@@ -1,0 +1,11 @@
+Bugs
+
+Clicking on Home page icon loads empty page
+Clicking on breadcrumbs takes to google maps
+Infants field name is missing, Infants category is missing in some instances like /23070/71 
+Get instead of delete is being used when we clear the cart
+Options param are not defined with proper naming in requests headers
+Address finder field is not marked as mandatory * even when its mandatory
+Fillers not visible on the UI like parking, etc
+Done button not visible on iPad resolution after selecting date
+Back button from cart takes you to home page with resting the search
