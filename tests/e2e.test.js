@@ -10,12 +10,12 @@ const configurations = [
     traceFile: 'trace-desktop.zip',
     videoDir: 'videos/desktop/',
   },
-  // {
-  //   name: 'Mobile (iPhone 13)',
-  //   options: devices['iPhone 13'],
-  //   traceFile: 'trace-mobile.zip',
-  //   videoDir: 'videos/mobile/',
-  // },
+  {
+    name: 'Mobile (iPhone 13)',
+    options: devices['iPhone 13'],
+    traceFile: 'trace-mobile.zip',
+    videoDir: 'videos/mobile/',
+  },
 ];
 
 for (const config of configurations) {
